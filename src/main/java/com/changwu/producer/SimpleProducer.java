@@ -18,7 +18,7 @@ public class SimpleProducer {
         properties.setProperty(ProducerConfig.BATCH_SIZE_CONFIG, "16384");
         // 长时间发送一个批次，1毫秒
         properties.setProperty(ProducerConfig.LINGER_MS_CONFIG, "1");
-        properties.setProperty(ProducerConfig.BUFFER_"MEMORY_CONFIG, "33554432");
+        properties.setProperty(ProducerConfig.BUFFER_MEMORY_CONFIG, "33554432");
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
         properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
         properties.setProperty(ProducerConfig.PARTITIONER_CLASS_CONFIG, "com.changwu.producer.SimplePartitioner");
